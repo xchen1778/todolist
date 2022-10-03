@@ -1,0 +1,42 @@
+.marquee1,
+.marquee2,
+.marquee3 {
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  span {
+    font-family: $font-family-title;
+    font-weight: bold;
+    font-size: 34vh;
+    display: inline-block;
+    transition: color 300ms ease-out;
+    animation: rightToleft 150s linear infinite;
+  }
+}
+
+.marquee1-sub,
+.marquee3-sub {
+  span {
+    padding-left: 100%;
+    animation-delay: 75s;
+  }
+}
+
+.marquee2 {
+  top: 34vh;
+  span {
+    animation: leftToright 150s linear infinite;
+  }
+}
+
+.marquee2-sub {
+  span {
+    margin-left: -100%;
+  }
+}
+
+.marquee3 {
+  top: 68vh;
+}

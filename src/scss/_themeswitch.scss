@@ -8,6 +8,7 @@
   border-radius: 3em;
   box-shadow: 0 1px 12px rgb(0 0 0 / 3%);
   transition: background-color 300ms ease-out;
+  z-index: 1;
 
   .MuiSvgIcon-root {
     font-size: 1.2em;
@@ -28,6 +29,6 @@
     position: static;
     order: -1;
     padding: 1em 1.3em;
-    margin-top: 2.5em;
+    margin-top: 5vh;
   }
 }

@@ -10,6 +10,7 @@
       letter-spacing: -0.5px;
       border: none;
       outline: none;
+      margin-top: -1px;
       margin-left: -2px;
       min-width: 130%;
       overflow-wrap: break-word;
@@ -22,13 +23,14 @@
   }
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 700px) {
   .edittodoform {
     .editinput {
       input {
+        margin-top: 0;
         font-size: 1em;
         min-width: auto;
-        inline-size: 100%;
+        inline-size: 55%;
       }
     }
   }

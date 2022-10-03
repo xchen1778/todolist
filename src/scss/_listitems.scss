@@ -10,3 +10,9 @@
     padding: 1em 2.8em;
   }
 }
+
+@media only screen and (max-width: 440px) {
+  .listitems {
+    padding: 1em 2.5em;
+  }
+}

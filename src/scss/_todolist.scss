@@ -2,7 +2,7 @@
   max-width: 35em;
   width: 85%;
   max-height: 35em;
-  height: 62%;
+  height: 80%;
   padding: 4em 0em;
   box-shadow: 0 1px 12px rgb(0 0 0 / 3%);
   border-radius: 0.8em;
@@ -58,19 +58,6 @@
       display: none;
     }
 
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   z-index: 1;
-    //   bottom: 0;
-    //   left: 0;
-    //   pointer-events: none;
-    //   width: 100%;
-    //   height: 5em;
-    //   border-radius: 0.8em;
-    //   transition: all 300ms ease-out;
-    // }
-
     .dimscreen {
       width: 100vw;
       height: 100vh;
@@ -118,9 +105,52 @@
       }
 
       .addbutton {
-        width: 4em;
-        height: 4em;
         right: 2.8em;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .todolist {
+    height: 60%;
+    #{&}-topsection {
+      padding: 0em 2.5em;
+      .title {
+        width: 30%;
+      }
+    }
+
+    .input-section {
+      .addbutton {
+        right: 2.5em;
+      }
+    }
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .todolist {
+    .input-section {
+      .emptyscreen {
+        .emptyscreen-img {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) and (max-height: 350px) {
+  .todolist {
+    .input-section {
+      .emptyscreen {
+        .emptyscreen-title {
+          display: none;
+        }
+      }
+      .addbutton {
+        display: none;
       }
     }
   }

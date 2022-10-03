@@ -45,7 +45,7 @@
     position: absolute;
     display: flex;
     height: 100%;
-    gap: 0.2em;
+    gap: 0em;
     right: 1em;
     padding-left: 3em;
     transition: all 300ms ease-out;
@@ -55,6 +55,7 @@
       border: none;
       cursor: pointer;
       transition: color 200ms ease-out;
+      width: 3em;
     }
   }
 }
@@ -76,9 +77,28 @@
 
     .entry-buttons {
       gap: 0;
-      right: 0.7em;
+      right: 1em;
+      padding-left: 0.5em;
       button {
-        transform: scale(0.8);
+        width: 2.5em;
+        .MuiSvgIcon-root {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .listitem {
+    padding: 0.8em 0.8em;
+    .entry {
+      .dragbutton {
+        display: none;
+      }
+
+      span {
+        inline-size: 55%;
       }
     }
   }
