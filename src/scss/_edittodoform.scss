@@ -1,0 +1,35 @@
+.edittodoform {
+  @extend .listitem;
+
+  .editinput {
+    @extend .entry;
+
+    input {
+      font-family: $font-family-text;
+      font-size: 1.1em;
+      letter-spacing: -0.5px;
+      border: none;
+      outline: none;
+      margin-left: -2px;
+      min-width: 130%;
+      overflow-wrap: break-word;
+      transition: background-color 300ms ease-out;
+    }
+  }
+
+  .editbuttons {
+    @extend .entry-buttons;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .edittodoform {
+    .editinput {
+      input {
+        font-size: 1em;
+        min-width: auto;
+        inline-size: 100%;
+      }
+    }
+  }
+}

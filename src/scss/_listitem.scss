@@ -1,0 +1,85 @@
+.listitem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 2em;
+  box-shadow: 0 1px 12px rgb(0 0 0 / 5%);
+  border-radius: 0.5em;
+  margin-bottom: 1.5em;
+  position: relative;
+  cursor: pointer;
+
+  .entry {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    transition: text-decoration 300ms ease-out;
+
+    .dragbutton {
+      position: absolute;
+      left: 8px;
+      transform: scale(0.7);
+      cursor: grab;
+    }
+
+    .radiobutton {
+      cursor: pointer;
+      transition: all 200ms ease-out;
+    }
+
+    span {
+      box-shadow: none;
+      font-size: 1.1em;
+      letter-spacing: -0.5px;
+      cursor: pointer;
+      inline-size: 100%;
+      word-break: break-all;
+    }
+  }
+
+  .finished {
+    text-decoration: line-through;
+  }
+
+  .entry-buttons {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    gap: 0.2em;
+    right: 1em;
+    padding-left: 3em;
+    transition: all 300ms ease-out;
+
+    button {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      transition: color 200ms ease-out;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .listitem {
+    padding: 0.8em 1.5em;
+    margin-bottom: 1.2em;
+    .entry {
+      .dragbutton {
+        left: 3px;
+        transform: scale(0.6);
+      }
+
+      span {
+        font-size: 1em;
+      }
+    }
+
+    .entry-buttons {
+      gap: 0;
+      right: 0.7em;
+      button {
+        transform: scale(0.8);
+      }
+    }
+  }
+}

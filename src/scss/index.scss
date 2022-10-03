@@ -1,0 +1,18 @@
+@import "./resets";
+@import "./variables";
+@import "./light";
+@import "./dark";
+@import "./app";
+@import "./todolist";
+@import "./datetime";
+@import "./themeswitch";
+@import "./_listitems";
+@import "./_listitem";
+@import "./edittodoform";
+@import "./addtodoform";
+
+body {
+  font-family: $font-family-text;
+  font-size: 16px;
+  user-select: none;
+}

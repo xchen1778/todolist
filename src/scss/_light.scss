@@ -1,0 +1,142 @@
+#light.app {
+  color: $navy;
+  background-color: $gray-blue-100;
+}
+
+#light .todolist {
+  background-color: $off-white;
+
+  #{&}-topsection {
+    .title {
+      color: $navy;
+    }
+  }
+
+  .input-section {
+    .emptyscreen {
+      .emptyscreen-title {
+        color: $gray-blue-400;
+      }
+    }
+
+    &::after {
+      background-image: linear-gradient(
+        to bottom,
+        rgba(250, 251, 254, 0),
+        rgba(250, 251, 254, 1) 50%
+      );
+    }
+
+    .addbutton {
+      color: $off-white;
+      background-color: $blue;
+      box-shadow: 0 3px 12px rgb(20 121 249 / 20%);
+
+      &:hover {
+        box-shadow: 0 3px 12px rgb(33 50 94 / 20%);
+      }
+    }
+
+    .addactive {
+      background-color: $navy;
+    }
+  }
+}
+
+#light .date {
+  color: $gray-blue-400;
+  background-color: $gray-blue-100;
+}
+
+#light .themeswitch {
+  background-color: $off-white;
+  color: $gray-blue-400;
+
+  .light {
+    &:hover {
+      color: $navy;
+    }
+  }
+
+  .light-active {
+    color: $navy;
+  }
+
+  .dark {
+    &:hover {
+      color: $navy;
+    }
+  }
+
+  .dark-active {
+    color: $navy;
+  }
+}
+
+#light .listitem {
+  background-color: $white;
+
+  &:hover {
+    box-shadow: 0 1px 12px rgb(20 121 249 / 15%);
+  }
+
+  .entry {
+    .radiobutton {
+      color: $gray-blue-300;
+
+      &:hover {
+        color: $navy;
+      }
+    }
+  }
+
+  .finished {
+    color: $gray-blue-200;
+  }
+
+  .entry-buttons {
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(255, 255, 255, 0.62) 0%,
+      rgba(255, 255, 255, 1) 36%
+    );
+
+    button {
+      color: $gray-blue-300;
+
+      &:hover {
+        color: $navy;
+      }
+    }
+  }
+}
+
+#light .addtodoform {
+  background-color: $white;
+  input {
+    color: $navy;
+
+    &::placeholder {
+      color: $gray-blue-300;
+    }
+  }
+
+  .addbuttons {
+    button {
+      color: $gray-blue-300;
+
+      &:hover {
+        color: $navy;
+      }
+    }
+  }
+}
+
+#light .edittodoform {
+  .editinput {
+    input {
+      color: $gray-blue-500;
+    }
+  }
+}

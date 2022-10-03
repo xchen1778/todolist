@@ -1,0 +1,55 @@
+.addtodoform {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  padding: 2em 3em;
+  box-shadow: 0 1px 12px rgb(0 0 0 / 10%);
+  border-radius: 0.5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  z-index: 3;
+
+  input {
+    font-family: $font-family-text;
+    font-size: 1.1em;
+    letter-spacing: -0.5px;
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+
+  .addbuttons {
+    align-self: flex-end;
+    display: flex;
+    gap: 0.2em;
+    margin-right: -0.8em;
+
+    button {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      transition: color 200ms ease-out;
+    }
+  }
+}
+
+.mount {
+  animation-name: fadeIn;
+  animation-duration: 300ms;
+}
+
+.unmount {
+  animation-name: fadeOut;
+  animation-duration: 300ms;
+}
+
+@media only screen and (max-width: 700px) {
+  .addtodoform {
+    width: 70%;
+  }
+}

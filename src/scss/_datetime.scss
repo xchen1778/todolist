@@ -1,0 +1,15 @@
+.date {
+  font-family: $font-family-title;
+  font-weight: medium;
+  font-size: 0.9em;
+  margin-top: -3px;
+  padding: 0.6em 1em;
+  border-radius: 5px;
+  align-self: flex-start;
+}
+
+@media only screen and (max-width: 700px) {
+  .date {
+    font-size: 0.8em;
+  }
+}

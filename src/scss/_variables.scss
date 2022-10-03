@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Tusker Grotesk";
+  font-weight: bold;
+  src: url("../../public/TuskerGrotesk-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Tusker Grotesk";
+  font-weight: medium;
+  src: url("../../public/TuskerGrotesk-Medium.ttf");
+}
+
+@font-face {
+  font-family: "SF Text";
+  font-weight: regular;
+  src: url("../../public/SFText-Regular.otf");
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+$font-family-title: "Tusker Grotesk", sans-serif;
+$font-family-text: "SF Text", sans-serif;
+
+$white: white;
+$off-white: #fafbfe;
+$gray-blue-100: #dee3f6;
+$gray-blue-200: #b0b8d3;
+$gray-blue-300: #a8b0cf;
+$gray-blue-400: #919fc3;
+$gray-blue-500: #7682a3;
+$blue: #1479f9;
+$navy: #21325e;
+
+$gray-100: #dfe3f4;
+$gray-200: #a4add2;
+$gray-300: #4d5a80;
+$gray-400: #47557c;
+$dark-blue-100: #2b375c;
+$dark-blue-200: #172755;
+$dark-blue-300: #13214a;
+$dark-blue-400: #040e2d;

@@ -1,0 +1,144 @@
+#dark.app {
+  color: $gray-100;
+  background-color: $dark-blue-400;
+}
+
+#dark .todolist {
+  background-color: $dark-blue-300;
+
+  #{&}-topsection {
+    .title {
+      color: $gray-100;
+    }
+  }
+
+  .input-section {
+    .emptyscreen {
+      .emptyscreen-title {
+        color: $gray-200;
+      }
+    }
+
+    &::after {
+      background-image: linear-gradient(
+        to bottom,
+        rgba(19, 33, 74, 0),
+        rgba(19, 33, 74, 1) 50%
+      );
+    }
+
+    .addbutton {
+      color: $off-white;
+      background-color: $blue;
+      box-shadow: 0 3px 12px rgb(20 121 249 / 20%);
+
+      &:hover {
+        box-shadow: 0 3px 12px rgb(19 33 74 / 20%);
+      }
+    }
+
+    .addactive {
+      background-color: $dark-blue-300;
+    }
+  }
+}
+
+#dark .date {
+  color: $gray-300;
+  background-color: $dark-blue-400;
+}
+
+#dark .themeswitch {
+  background-color: $dark-blue-300;
+  color: $gray-300;
+
+  .light {
+    &:hover {
+      color: $gray-100;
+    }
+  }
+
+  .light-active {
+    color: $gray-100;
+  }
+
+  .dark {
+    &:hover {
+      color: $gray-100;
+    }
+  }
+
+  .dark-active {
+    color: $gray-100;
+  }
+}
+
+#dark .listitem {
+  background-color: $dark-blue-100;
+
+  &:hover {
+    box-shadow: 0 1px 12px rgb(20 121 249 / 10%);
+  }
+
+  .entry {
+    .radiobutton {
+      color: $gray-300;
+
+      &:hover {
+        color: $gray-100;
+      }
+    }
+  }
+
+  .finished {
+    color: $gray-400;
+  }
+
+  .entry-buttons {
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(43, 55, 92, 0.62) 0%,
+      rgba(43, 55, 92, 1) 36%
+    );
+
+    button {
+      color: $gray-300;
+
+      &:hover {
+        color: $gray-100;
+      }
+    }
+  }
+}
+
+#dark .addtodoform {
+  background-color: $dark-blue-200;
+  input {
+    background-color: $dark-blue-200;
+    color: $gray-100;
+
+    &::placeholder {
+      color: $gray-300;
+    }
+  }
+
+  .addbuttons {
+    button {
+      color: $gray-300;
+
+      &:hover {
+        color: $gray-100;
+      }
+    }
+  }
+}
+
+#dark .edittodoform {
+  .editinput {
+    input {
+      background-color: $dark-blue-100;
+      color: $gray-200;
+    }
+  }
+}

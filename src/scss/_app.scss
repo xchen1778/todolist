@@ -1,0 +1,15 @@
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 300ms ease-out;
+}
+
+@media only screen and (max-width: 780px) {
+  .app {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2em;
+  }
+}
