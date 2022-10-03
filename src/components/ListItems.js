@@ -17,6 +17,16 @@ function ListItems({ enableFlip, setEnableFlip }) {
   const todoItemsId = "flip-todo-items";
 
   useEffect(() => {
+    if (enableFlip === false) {
+      setEnableFlip(true);
+    }
+  }, [todos]);
+
+  useFlip(todoItemsId, {
+    duration: enableFlip ? 300 : 0,
+  });
+
+  useEffect(() => {
     function handleResize() {
       setDimensions({
         width: window.innerWidth,
@@ -29,16 +39,6 @@ function ListItems({ enableFlip, setEnableFlip }) {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  });
-
-  useEffect(() => {
-    if (!enableFlip) {
-      setEnableFlip(true);
-    }
-  }, [todos]);
-
-  useFlip(todoItemsId, {
-    duration: enableFlip ? 300 : 0,
   });
 
   return (
