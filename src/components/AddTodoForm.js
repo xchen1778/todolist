@@ -15,12 +15,29 @@ function AddTodoForm({ isAdding, setIsAdding, unmounting, setUnmounting }) {
     currentElement.current.focus();
   }, [isAdding]);
 
+  useEffect(() => {
+    document.addEventListener("keydown", handleESC);
+    return () => {
+      document.removeEventListener("keydown", handleESC);
+    };
+  }, [addTodo]);
+
+  function handleESC(e) {
+    if (e.key === "Escape") {
+      setUnmounting(true);
+      setTimeout(() => {
+        setIsAdding(false);
+        resetAddTodo();
+      }, 300);
+    }
+  }
+
   function handleCancelAdding(event) {
     event.preventDefault();
-    resetAddTodo();
     setUnmounting(true);
     setTimeout(() => {
       setIsAdding(false);
+      resetAddTodo();
     }, 300);
   }
 

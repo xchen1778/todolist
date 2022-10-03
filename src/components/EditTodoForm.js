@@ -12,9 +12,19 @@ function EditTodoForm({ id, task, setIsEditing }) {
   const currentElement = useRef();
 
   useEffect(() => {
-    console.log(currentElement);
     currentElement.current.focus();
   }, []);
+
+  useEffect(() => {
+    document.addEventListener("keydown", handleESC);
+    return () => {
+      document.removeEventListener("keydown", handleESC);
+    };
+  }, [editTodo]);
+
+  function handleESC(e) {
+    e.key === "Escape" && setIsEditing(false);
+  }
 
   function handleCancelEditing(event) {
     event.preventDefault();
